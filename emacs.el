@@ -1,12 +1,12 @@
 ;; Include in ~/.emacs with:
 ;;
-;;    (load "/path-to/this/file/.emacs")
-;;    (load "common")
+;;    (load "/path-to/this/file/emacs.el")
+;;    (load "my-common")
 ;;
-;; Enable optional modes (located in .emacs.d) with:
+;; Enable optional modes (located in the emacs directory) with:
 ;;
-;;    (load "ocaml")
-;;    (load "haskell")
+;;    (load "my-ocaml")
+;;    (load "my-haskell")
 ;;    etc.
 
 ;; Packages
@@ -29,7 +29,7 @@
 ;; Path for loading optional modes
 (add-to-list 'load-path
              (concat (file-name-directory (or load-file-name (buffer-file-name)))
-                     ".emacs.d"))
+                     "emacs"))
 
 ;; Various
 (show-paren-mode 1)
