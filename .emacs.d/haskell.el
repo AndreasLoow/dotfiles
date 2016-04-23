@@ -1,0 +1,2 @@
+(ensure-packages '(haskell-mode))
+
