@@ -2,8 +2,6 @@
 
 ;; Whitespace
 (setq-default show-trailing-whitespace t)
-(require 'whitespace)
-(global-whitespace-mode 1)
 
 ;; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
