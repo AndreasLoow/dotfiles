@@ -33,6 +33,7 @@
 
 ;; Various
 (show-paren-mode 1)
+(column-number-mode 1)
 
 ;; Temporary files
 (make-directory "~/.emacs.d/.backups/" t)
@@ -45,4 +46,4 @@
 (setq inhibit-startup-message t)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-(scroll-bar-mode -1)
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
