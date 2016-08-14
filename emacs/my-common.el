@@ -1,4 +1,4 @@
-(ensure-packages '(flycheck-mode))
+(ensure-packages '(flycheck))
 
 ;; Whitespace
 (setq-default show-trailing-whitespace t)
