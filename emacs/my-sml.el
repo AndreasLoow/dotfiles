@@ -1,0 +1,1 @@
+(ensure-packages '(sml-mode))
