@@ -45,5 +45,7 @@
 ;; Ui bloat
 (setq inhibit-startup-message t)
 (tool-bar-mode -1)
-(menu-bar-mode -1)
+; Menu-bar-mode does not take up any space on Mac
+(if (not (eq system-type 'darwin)) (menu-bar-mode -1))
+; Sometimes scroll-bar-mode isn't defined, for some reason.
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
