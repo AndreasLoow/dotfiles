@@ -10,3 +10,6 @@ brew install bash-completion
 
 # Reminder: Completion does not work with default git
 brew install git
+
+# Other packages
+brew install atool
