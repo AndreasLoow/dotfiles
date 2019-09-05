@@ -1,7 +1,7 @@
 (ensure-packages '(flycheck))
 
 ;; Whitespace
-(setq-default show-trailing-whitespace t)
+;(setq-default show-trailing-whitespace t)
 
 ;; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
