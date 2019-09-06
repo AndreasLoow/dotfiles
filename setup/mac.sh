@@ -3,7 +3,7 @@
 # Default bash is very old
 brew install bash
 
-# Add brew bash to allowed shells: echo /usr/local/bin/bash >> /etc/shells
+# Add brew bash to allowed shells: echo /usr/local/bin/bash >> /etc/shells (<-- seems to not be needed?)
 # Set current user shell: chsh -s /usr/local/bin/bash
 
 brew install bash-completion
