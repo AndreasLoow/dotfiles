@@ -1,0 +1,3 @@
+Note from Heiko about sml-mode:
+
+Change sml-mode.el in .emacs.d/elpa/sml-mode-XX to not check for a "definitional equality" anymore by  removing line 667 (((string= sym "=") (if (sml-smie-definitional-equal-p) "d=" "=")))
