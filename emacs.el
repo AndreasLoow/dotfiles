@@ -34,6 +34,8 @@
 ;; Various
 (show-paren-mode 1)
 (column-number-mode 1)
+; Sometimes slow
+(setq vc-handled-backends nil)
 
 ;; Temporary files
 (make-directory "~/.emacs.d/.backups/" t)
@@ -49,6 +51,9 @@
 (if (not (eq system-type 'darwin)) (menu-bar-mode -1))
 ; Sometimes scroll-bar-mode isn't defined, for some reason.
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+; Open files side-by-side
+(setq split-height-threshold nil)
+(setq split-width-threshold 0)
 
 ;; Mac
 (if (eq system-type 'darwin) (load "my-mac.el"))
