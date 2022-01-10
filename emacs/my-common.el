@@ -16,3 +16,6 @@
 ; TODO: Find a mode that works better than auto-dictionary-mode
 ; TODO: (too slow, takes forever to identify the language):
 ;(add-hook 'flyspell-mode-hook (lambda () (auto-dictionary-mode 1)))
+
+;; Start in fullscreen
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
